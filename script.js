@@ -6,14 +6,14 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Pergunta 1",
+        enunciado: "voce protege o meio ambiente?",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            "sim",
+            "nao"
         ]
     },
     {
-        enunciado: "Pergunta 2",
+        enunciado: "voce sabe como proteger o meio ambiente",
         alternativas: [
             "Alternativa 1",
             "Alternativa 2"
@@ -41,3 +41,37 @@ const perguntas = [
         ]
     }
 ];
+
+let atual = 0;
+let perguntaAtual;
+let historiaFinal = "................";
+
+function mostraPergunta () {
+perguntaAtual = perguntas[atual];
+caixaPerguntas.textContent = perguntaAtual.enunciado;
+mostraAlternativas();
+
+}
+function mostraAlternativas() {
+    for(const alternativa of perguntaAtual.alternativas) {
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa;
+        botaoAlternativas.addEventListener("click",() => respostaSelecionada(alternativa)) 
+        caixaAlternativas.appendChild(botaoAlternativas)
+    }
+}
+
+function respostaSelecionada(opcaoSelecionada){
+    const afirmacoes = opcaoSelecionada.afirmacao;
+    historiaFinal += afirmacoes + ".......";
+    atual++;
+    mostraPergunta();
+
+}
+
+function mostraResultado(){
+    caixaPerguntas.textContent = "Em 2049........";
+    caixaAlternativas.textContent = ".....";
+}
+
+mostraPergunta();

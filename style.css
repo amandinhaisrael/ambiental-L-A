@@ -1,8 +1,8 @@
 :root{
     --cor-fundo: #01080E ;
     --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333;
-    --cor-destaque: #2BDEFD;
+    --cor-secundaria: #212333; 
+    --cor-destaque: #e656dc;
     --cor-texto: #D7F9FF;
 
 }
@@ -22,4 +22,8 @@ body {
     max-width: 600px;
     text-align: center;
     padding: 20px;
+}
+
+h1{
+    color: var(--cor-destaque);
 }
