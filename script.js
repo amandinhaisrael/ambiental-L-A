@@ -6,48 +6,83 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "voce protege o meio ambiente?",
+        enunciado: "você protege o meio ambiente?",
         alternativas: [
-            "sim",
-            "nao"
+            {
+           texto: "sim",
+           afirmacao: "Sempre é bom proteger o meio ambiente, pois é por ele que vivemos"
+            },
+            {
+                texto: "Não",
+                afirmacao: "Ao não proteger o meio ambiente você esta prejudicando a si mesmo"
+                 },
+        
         ]
     },
     {
-        enunciado: "voce sabe como proteger o meio ambiente",
+        enunciado: "você sabe como proteger o meio ambiente",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            {
+                texto: "sim",
+                afirmacao: "afirmação"
+                 },
+                 {
+                     texto: "Não",
+                     afirmacao: "afirmação"
+                      },
         ]
     },
     {
-        enunciado: "Pergunta 3",
+        enunciado: "você sabe qual é a proposta da ONU que protege o meio ambiente?",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            {
+                texto: "sim",
+                afirmacao: "afirmação"
+                 },
+                 {
+                     texto: "Não",
+                     afirmacao: "afirmação"
+                      },
         ]
     },
     {
-        enunciado: "Pergunta 4",
+        enunciado: "você sabe como a ONU trabalha dentro dessas questõs",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            {
+                texto: "sim",
+                afirmacao: "afirmação"
+                 },
+                 {
+                     texto: "Não",
+                     afirmacao: "afirmação"
+                      },
         ]
     },
     {
-        enunciado: "Pergunta 5",
+        enunciado: "Você sabe como preservar as árvores na floresta?",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            {
+                texto: "sim",
+                afirmacao: "afirmação"
+                 },
+                 {
+                     texto: "Não",
+                     afirmacao: "afirmação"
+                      },
         ]
     }
 ];
 
 let atual = 0;
 let perguntaAtual;
-let historiaFinal = "................";
+let historiaFinal = "";
 
 function mostraPergunta () {
-perguntaAtual = perguntas[atual];
+if (atual>=perguntas.length){
+    mostraResultado();
+    return;
+}
+    perguntaAtual = perguntas[atual];
 caixaPerguntas.textContent = perguntaAtual.enunciado;
 mostraAlternativas();
 
@@ -63,15 +98,16 @@ function mostraAlternativas() {
 
 function respostaSelecionada(opcaoSelecionada){
     const afirmacoes = opcaoSelecionada.afirmacao;
-    historiaFinal += afirmacoes + ".......";
+    historiaFinal += afirmacoes + "";
     atual++;
     mostraPergunta();
 
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = "Em 2049........";
-    caixaAlternativas.textContent = ".....";
+    caixaPerguntas.textContent = "";
+    textoResultado.textContent="";
+    caixaAlternativas.textContent = "";
 }
 
 mostraPergunta();
