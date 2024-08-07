@@ -15,7 +15,7 @@ const perguntas = [
             {
                 texto: "Não",
                 afirmacao: "Ao não proteger o meio ambiente você esta prejudicando a si mesmo"
-                 },
+                 }
         
         ]
     },
@@ -24,12 +24,12 @@ const perguntas = [
         alternativas: [
             {
                 texto: "sim",
-                afirmacao: "afirmação"
+                afirmacao: "se você esta protegendo o meio ambiente provavelmente você "
                  },
                  {
                      texto: "Não",
                      afirmacao: "afirmação"
-                      },
+                      }
         ]
     },
     {
@@ -42,7 +42,7 @@ const perguntas = [
                  {
                      texto: "Não",
                      afirmacao: "afirmação"
-                      },
+                      }
         ]
     },
     {
@@ -55,7 +55,7 @@ const perguntas = [
                  {
                      texto: "Não",
                      afirmacao: "afirmação"
-                      },
+                      }
         ]
     },
     {
@@ -68,7 +68,7 @@ const perguntas = [
                  {
                      texto: "Não",
                      afirmacao: "afirmação"
-                      },
+                      }
         ]
     }
 ];
@@ -84,14 +84,15 @@ if (atual>=perguntas.length){
 }
     perguntaAtual = perguntas[atual];
 caixaPerguntas.textContent = perguntaAtual.enunciado;
+caixaAlternativas.textContent="";
 mostraAlternativas();
 
 }
 function mostraAlternativas() {
     for(const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
-        botaoAlternativas.textContent = alternativa;
-        botaoAlternativas.addEventListener("click",() => respostaSelecionada(alternativa)) 
+        botaoAlternativas.textContent = alternativa.texto;
+        botaoAlternativas.addEventListener("click",() => respostaSelecionada(alternativa)); 
         caixaAlternativas.appendChild(botaoAlternativas)
     }
 }
