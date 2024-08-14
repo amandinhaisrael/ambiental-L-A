@@ -9,11 +9,11 @@ const perguntas = [
         enunciado: "você protege o meio ambiente?",
         alternativas: [
             {
-           texto: "sim",
+           texto: "sim, pois sei da importancia dele.",
            afirmacao: "Sempre é bom proteger o meio ambiente, pois é por ele que vivemos"
             },
             {
-                texto: "Não",
+                texto: "Não,pois não me importo.",
                 afirmacao: "Ao não proteger o meio ambiente você esta prejudicando a si mesmo"
                  }
         
@@ -23,12 +23,12 @@ const perguntas = [
         enunciado: "você sabe como proteger o meio ambiente",
         alternativas: [
             {
-                texto: "sim",
-                afirmacao: "se você esta protegendo o meio ambiente provavelmente você "
+                texto: "sim, aprendi desde cedo.",
+                afirmacao: "se você esta protegendo o meio ambiente provavelmente você esta economizando água, energia, papel"
                  },
                  {
-                     texto: "Não",
-                     afirmacao: "afirmação"
+                     texto: "Não, nunca tive exemplo.",
+                     afirmacao: "Você sabia que tem como procurar dicas na internet?"
                       }
         ]
     },
@@ -36,12 +36,12 @@ const perguntas = [
         enunciado: "você sabe qual é a proposta da ONU que protege o meio ambiente?",
         alternativas: [
             {
-                texto: "sim",
-                afirmacao: "afirmação"
+                texto: "sim, e acho muito interessante",
+                afirmacao: "Voce sabia que a ONU sempre esta por dentro de todas as questões ambientais? "
                  },
                  {
-                     texto: "Não",
-                     afirmacao: "afirmação"
+                     texto: "Não, mas gostaria de saber",
+                     afirmacao: "A ONU tem um objetivo que até 2030 pretende reduzir o uso da água, o valor da biodiversiade e a necessidade de garantir sua proteção."
                       }
         ]
     },
@@ -49,12 +49,12 @@ const perguntas = [
         enunciado: "você sabe como a ONU trabalha dentro dessas questõs",
         alternativas: [
             {
-                texto: "sim",
-                afirmacao: "afirmação"
+                texto: "sim, ja ouvi falar",
+                afirmacao: "provavelmente você deve praticar atos que ajudam o ambiente."
                  },
                  {
-                     texto: "Não",
-                     afirmacao: "afirmação"
+                     texto: "Não, mas gostaria de saber",
+                     afirmacao: "a ods 15 tem como objetivo proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade."
                       }
         ]
     },
@@ -62,12 +62,12 @@ const perguntas = [
         enunciado: "Você sabe como preservar as árvores na floresta?",
         alternativas: [
             {
-                texto: "sim",
-                afirmacao: "afirmação"
+                texto: "sim, pois elas são muito importantes",
+                afirmacao: "as arvores que protegem o meio ambiente, pois se não tivessem elas as faricas tomariam conta do oxigenio."
                  },
                  {
-                     texto: "Não",
-                     afirmacao: "afirmação"
+                     texto: "Não, pois não vejo o porque.",
+                     afirmacao: "As árvores são o maior patrimônio ambiental que existe nas cidades, pois elas abrigam os pássaros, que espalham as sementes e comem os insetos. "
                       }
         ]
     }
@@ -106,8 +106,8 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = "";
-    textoResultado.textContent="";
+    caixaPerguntas.textContent = " Em 2030";
+    textoResultado.textContent= historiaFinal;
     caixaAlternativas.textContent = "";
 }
 
