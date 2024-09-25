@@ -38,6 +38,7 @@ const perguntas = [
                     }
                      
         ]
+
     },
     {
         enunciado: "você sabe qual é a proposta da ONU que protege o meio ambiente?",
@@ -87,6 +88,7 @@ const perguntas = [
                     "as arvores que protegem o meio ambiente, pois se não tivessem elas as faricas tomariam conta do oxigenio.",
                     "se cada aniversário que você fizesse, uma árvore fosse plantada o ambiente seria uito melhor "
                 ]
+
                 },
                  {
                      texto: "Não, pois não vejo o porque.",
