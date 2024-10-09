@@ -7,14 +7,19 @@ const perguntas = [
            afirmacao: [
             "Sempre é bom proteger o meio ambiente, pois é por ele que vivemos",
            "ultimamente com as queimadas no norte do brasil, precisamos estar atentos com o ambiente em que vivemos"
-            ]
+            ],
+
+            proxima: 1,
+
             },
             {
                 texto: "Não,pois não me importo.",
                 afirmacao: [
                      "Ao não proteger o meio ambiente você esta prejudicando a si mesmo",
                      "com o aumento da poluição a nossa saúde vai ficar cada vez mais debilitada"
-                     ]
+                     ],
+
+                     proxima: 2,
                  }
        
         ]
@@ -27,14 +32,20 @@ const perguntas = [
                 afirmacao: [
                     "se você esta protegendo o meio ambiente provavelmente você esta economizando água, energia, papel",
                     "com mais árvores plantadas, mais segurança para a nossa saúde"
-                     ]
+                     ],
+
+                     proxima: 3,
+
                  },
                  {
                      texto: "Não, nunca tive exemplo.",
                      afirmacao: [
                         "Você sabia que tem como procurar dicas na internet?",
                         "quanto mais você souber, melhor vai ser para gerações futuras"
-                     ]
+                     ],
+
+                     proxima: 4,
+
                     }
                      
         ]
@@ -48,14 +59,19 @@ const perguntas = [
                 afirmacao: [
                     "Voce sabia que a ONU sempre esta por dentro de todas as questões ambientais? ",
                     "mas infelizmente não adianta a ONU fazer a parte dela se você não faz a sua"
-                ]
+                ],
+
+                proxima: 5,
+
                  },
                  {
                      texto: "Não, mas gostaria de saber",
                      afirmacao: [
                         "A ONU tem um objetivo que até 2030 pretende reduzir o uso da água, o valor da biodiversiade e a necessidade de garantir sua proteção.",
                         "com o aquecimendo global, o ar esta ficando mais pesado"
-                     ]
+                     ],
+
+                     proxima: 6,
                      
                       }
         ]
@@ -63,19 +79,24 @@ const perguntas = [
     {
         enunciado: "você sabe como a ONU trabalha dentro dessas questõs",
         alternativas: [
-            {
+            {                proxima:9,
                 texto: "sim, ja ouvi falar",
                 afirmacao: [
                     "provavelmente você deve praticar atos que ajudam o ambiente.",
                     "cada árvore plantada, um sorriso é dado"
-                ]
+                ],
+
+                proxima: 7,
+
                  },
                  {
                      texto: "Não, mas gostaria de saber",
                      afirmacao: [
                         "a ods 15 tem como objetivo proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade.",
                         "com os objetivos da ONu o planeta tende a melhorar"
-                     ]
+                     ],
+
+                     proxima: 8,
                       }
         ]
     },
